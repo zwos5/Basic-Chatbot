@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <cstring>
 #include <fstream>
 
 using namespace std;
@@ -19,34 +20,34 @@ void GetRequest() {
     cout << "What's up " << userName << "?" << endl;
     getline(cin, prompt);
     
-    if(prompt == "hi") {
+    if(strcasecmp(prompt.c_str(), "hi") == 0) {
         cout << "Hello, " << userName << endl;
     }
-    else if(prompt == "how are you?") {
+    else if(strcasecmp(prompt.c_str(), "how are you?") == 0) {
         cout << "Doing good, I am learning." << endl;
     }
-    else if(prompt == "sum") {
+    else if(strcasecmp(prompt.c_str(), "sum") == 0) {
         int num1, num2;
         cout << "Give me two numbers" << endl;
         cin >> num1;
         cin >> num2;
         cout << "The two numbers added together equal " << num1 + num2 << endl;
     }
-    else if(prompt == "subtract") {
+    else if(strcasecmp(prompt.c_str(), "subtract") == 0) {
         int num1, num2;
         cout << "Give me two numbers" << endl;
         cin >> num1;
         cin >> num2;
         cout << "The two numbers subtracted equal " << num1 - num2 << endl;
     }
-    else if(prompt == "multiply") {
+    else if(strcasecmp(prompt.c_str(), "multiply") == 0) {
         int num1, num2;
         cout << "Give me two numbers" << endl;
         cin >> num1;
         cin >> num2;
         cout << "The two numbers multiplied equal " << num1 * num2 << endl;
     }
-    else if(prompt == "divide") {
+    else if(strcasecmp(prompt.c_str(), "divide") == 0) {
         double num1, num2;
         cout << "Give me two numbers" << endl;
         cin >> num1;
@@ -55,18 +56,24 @@ void GetRequest() {
         if(num2 > 0 || num2 < 0)
         cout << "The two numbers divided equal " << num1 / num2 << endl;
         else {
-            cout << "Can't divide by 0 or negative \n";
+            cout << "Can't divide by 0 \n";
         }
     }
-    else if(prompt == "do you have feelings?") {
+    else if(strcasecmp(prompt.c_str(), "do you have feelings?") == 0) {
         cout << "I am a robot, I have no emotions" << endl;
     }
-    else if(prompt == "what do you like to do?") {
+    else if(strcasecmp(prompt.c_str(), "what do you like to do?") == 0) {
         cout << "I am just a chatbot I haven't been programmed to do much" << endl;
         cout << "However, drawing sounds kind of interesting." << endl;
     }
-    else if(prompt == "what is your name?") {
+    else if(strcasecmp(prompt.c_str(), "what is your name?") == 0) {
         cout << "I am CBot a chatbot built in C++" << endl;
+    }
+    else if(strcasecmp(prompt.c_str(), "what is the meaning of life?") == 0) {
+        cout << "The meaning of life is simply what one chooses to make of it." << endl;
+        cout << "For some that may include learning as many skills as possible." << endl;
+        cout << "For others it might be helping as many people as possible." << endl;
+        cout << "Life is what you choose to make of it." << endl;
     }
     else {
         cout << "Sorry I didn't quite get that." << endl;
