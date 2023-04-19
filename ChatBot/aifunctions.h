@@ -75,6 +75,10 @@ void GetRequest() {
         cout << "For others it might be helping as many people as possible." << endl;
         cout << "Life is what you choose to make of it." << endl;
     }
+    else if(strcasecmp(prompt.c_str(), "why can't I divide by 0?") == 0) {
+        cout << "Mathematical laws and practices state that one can't divide by zero." << endl;
+        cout << "Ask the math community about it." << endl;
+    }
     else {
         cout << "Sorry I didn't quite get that." << endl;
         cout << 
