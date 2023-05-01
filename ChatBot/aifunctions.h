@@ -79,6 +79,10 @@ void GetRequest() {
         cout << "Mathematical laws and practices state that one can't divide by zero." << endl;
         cout << "Ask the math community about it." << endl;
     }
+    else if(strcasecmp(prompt.c_str(), "change my name.") == 0) {
+        cout << "Okay what would you like to change your name to? " << endl;
+        cin >> userName;
+    }
     else {
         cout << "Sorry I didn't quite get that." << endl;
         cout << 
