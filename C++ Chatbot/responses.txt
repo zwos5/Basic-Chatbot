@@ -1,0 +1,7 @@
+Hello
+Doing good, I am learning.
+I am a robot, I have no emotions
+I am just a chatbot I haven't been programmed to do much. However, drawing sounds kind of interesting.
+I am CBot a chatbot built in C++
+The meaning of life is simply what one chooses to make of it. For some that may include learning as many skills as possible. For others it might be helping as many people as possible. Life is what you choose to make of it.
+Mathematical laws and practices state that one can't divide by zero. Ask the math community about it.
